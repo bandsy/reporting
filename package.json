@@ -1,0 +1,21 @@
+{
+  "name": "reporting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/bandsy/reporting.git",
+  "author": "Ryan Larkin <rlarkin212@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.0.3",
+    "fastify": "^2.14.1",
+    "typeorm": "^0.2.25",
+    "typescript": "^3.9.2"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "start": "node ./dist/.",
+    "run:prod": "yarn cross-env NODE_ENV=prod NODE_PATH=. node dist",
+    "clean": "rm -rf dist coverage"
+  }
+}
